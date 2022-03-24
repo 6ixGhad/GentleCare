@@ -1,0 +1,6 @@
+Mar 24 2022 02:53:01
+{"Number":2,"Message":"fopen(C:\\\\Users\\\\antho\\\\Local Sites\\\\web-project\\\\app\\\\public\\\\wp-content\\\\themes\\\\medical-care\\\\images\\\\fulltime.jpg): failed to open stream: No such file or directory","File":"C:\\Users\\antho\\Local Sites\\web-project\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-compressor.php","Line":71}
+
+Mar 24 2022 03:04:59
+{"Number":8,"Message":"fwrite(): write of 4096 bytes failed with errno=28 No space left on device","File":"C:\\Users\\antho\\Local Sites\\web-project\\app\\public\\wp-content\\plugins\\all-in-one-wp-migration\\functions.php","Line":1401}
+

@@ -23,6 +23,8 @@ function medical_care_setup() {
 	add_image_size('staffLandscape',400, 260, true);
  	add_image_size('staffPortrait',480, 650, true);
  	add_image_size('pageBanner',1500, 350, true);
+	add_image_size('servicesCard',250, 400, true);
+	add_image_size('slider',1500, 700, true);
 
 	$GLOBALS['content_width'] = 525;
 	register_nav_menus( array(
@@ -136,6 +138,11 @@ function medical_care_scripts() {
 
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'medical-care-fonts', medical_care_fonts_url(), array(), null );
+
+	wp_enqueue_style('custom-google-font','https://fonts.googleapis.com/css2?amily=Playfair+Display:wght@300&display=swap');
+	
+	wp_enqueue_style('custom-google-quotefont','https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+	
 
 	//Bootstarp 
 	wp_enqueue_style( 'bootstrap-style', esc_url( get_template_directory_uri() ).'/assets/css/bootstrap.css' );	
@@ -348,6 +355,52 @@ function redirectSubsToFrontend(){
 	$userNumRoles = count($ourCurrentUser->roles);
 	$userRole = $ourCurrentUser->roles[0];
 	if($userNumRoles == 1 AND $userRole == 'subscriber'){
+	show_admin_bar(false);
+	}
+	}
+
+//Redirect user accounts out of admin and onto homepage
+add_action('admin_init', 'redirectUsersToFrontend');
+function redirectUsersToFrontend(){
+ $ourCurrentUser = wp_get_current_user();
+ $userNumRoles = count($ourCurrentUser->roles);
+ $userRole = $ourCurrentUser->roles[0];
+ if($userNumRoles == 1 AND $userRole == 'user'){
+ wp_redirect(site_url('/'));
+ exit; //tell PHP to stop once someone is redirected
+ }
+ }
+
+	//Hide admin bar from subscribers
+	add_action('wp_loaded', 'noUsersAdminBar');
+	function noUsersAdminBar(){
+	$ourCurrentUser = wp_get_current_user();
+	$userNumRoles = count($ourCurrentUser->roles);
+	$userRole = $ourCurrentUser->roles[0];
+	if($userNumRoles == 1 AND $userRole == 'user'){
+	show_admin_bar(false);
+	}
+	}
+
+//Redirect subscriber accounts out of admin and onto homepage
+add_action('admin_init', 'redirectClientsToFrontend');
+function redirectClientsToFrontend(){
+ $ourCurrentUser = wp_get_current_user();
+ $userNumRoles = count($ourCurrentUser->roles);
+ $userRole = $ourCurrentUser->roles[0];
+ if($userNumRoles == 1 AND $userRole == 'client'){
+ wp_redirect(site_url('/'));
+ exit; //tell PHP to stop once someone is redirected
+ }
+ }
+
+	//Hide admin bar from subscribers
+	add_action('wp_loaded', 'noClientsAdminBar');
+	function noClientsAdminBar(){
+	$ourCurrentUser = wp_get_current_user();
+	$userNumRoles = count($ourCurrentUser->roles);
+	$userRole = $ourCurrentUser->roles[0];
+	if($userNumRoles == 1 AND $userRole == 'client'){
 	show_admin_bar(false);
 	}
 	}

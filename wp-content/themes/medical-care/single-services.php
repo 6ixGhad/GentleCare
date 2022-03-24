@@ -112,6 +112,41 @@
         }
         ?>
 
+<?php 
+  wp_reset_postdata();
+    $relatedReviews = new WP_Query(array(
+      'posts_per_page' => -1,
+      'post_type' => 'review',
+      'orderby' => 'meta_value_num',
+      'order' => 'ASC',
+      'meta_query' => array(
+        array(
+          'key' => 'related_review_or_service',
+          'compare' => 'LIKE',
+          'value' => '"'.get_the_ID().'"'
+        )
+      )
+    ));
+
+
+    if($relatedReviews->have_posts()){
+      echo '<hr class="section-break">';
+      echo '<h2 class="headline headline--medium">'. get_the_title().' Reviews</h2>';
+      echo '<ul class="link-list min-list">';
+      while($relatedReviews->have_posts()){
+      $relatedReviews->the_post();?>
+      <li><a href="<?php echo the_permalink();?>">
+                <?php echo the_title();?>
+            </a>
+            by
+            <?php the_author_posts_link();?>
+        </li>  
+      <?php
+      }
+      echo '</ul>';
+      }
+      ?>
+
 
     </div>
 

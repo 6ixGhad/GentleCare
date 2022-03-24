@@ -14,7 +14,7 @@
             <i class="fa fa-home" aria-hidden="true"></i> Event Home</a> 
             <span class="metabox__main"><?php the_title(); ?> </span></p>
         </div>
-        <div class="generic-content">
+        <div class="site-content">
             <?php the_content(); ?>
         </div>
         <?php 

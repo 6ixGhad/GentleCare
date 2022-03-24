@@ -359,7 +359,7 @@ function medical_care_customize_register( $wp_customize ) {
 		'settings'    => 'medical_care_slider_arrows',
 	) ) );
 
-	$post_list = get_posts();
+	$post_list = get_posts('post_type=services');
 	$i = 0;	
 	$pst_sls[]='Select';
 	foreach ($post_list as $key => $p_post) {
