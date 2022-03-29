@@ -7,6 +7,7 @@
  */
 
 ?><!DOCTYPE html>
+
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

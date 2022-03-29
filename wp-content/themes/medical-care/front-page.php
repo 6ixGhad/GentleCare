@@ -94,8 +94,7 @@ get_header(); ?>
       </div>
     </div>
   <?php }?>
-</main>
-<div id="homepageSecondDiv">
+  <div id="homepageSecondDiv">
 <div class="seconddiv-text">
         Caring for your loved ones 
         for over 15 years.
@@ -115,6 +114,8 @@ get_header(); ?>
         <div id="map">
         <iframe width=100% height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:EixFbCBTb2NvcnJvIFJkLCBTYW4gSnVhbiwgVHJpbmlkYWQgYW5kIFRvYmFnbyIuKiwKFAoSCQGD9bRlBzaMEf6KOTAfJLXMEhQKEgn1LWxtaQc2jBGFpDjkyWv93Q&key=AIzaSyAOnfgITtNVSjIpgItFBTFBXMjHC3bdN9o"></iframe>
         </div>
+</main>
+
 
    
 

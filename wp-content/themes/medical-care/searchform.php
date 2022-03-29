@@ -8,8 +8,19 @@
 ?>
 
 <?php $medical_care_unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
+<div class="search-field">
+<input type="search"
+ class="search-form"
+placeholder="What are you looking for?"
+ id="search-term"/>
+ </div>
+<div class="search-overlay">
+ <div class="search-overlay__top">
+ <div class="container">
+ <div id="search-overlay__results">Search results go here</div>
+ </div>
+ </div>
+</div>
 
-<form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder', 'medical-care' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" class="search-submit"><?php echo esc_html_x( 'Search', 'submit button', 'medical-care' ); ?></button>
-</form>
+
+

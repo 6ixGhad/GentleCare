@@ -139,7 +139,6 @@ function medical_care_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'medical-care-fonts', medical_care_fonts_url(), array(), null );
 
-	wp_enqueue_style('custom-google-font','https://fonts.googleapis.com/css2?amily=Playfair+Display:wght@300&display=swap');
 	
 	wp_enqueue_style('custom-google-quotefont','https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 	
@@ -162,6 +161,8 @@ function medical_care_scripts() {
 
 	//Custom JS
 	wp_enqueue_script( 'medical-care-custom.js', get_theme_file_uri( '/assets/js/medical-care-custom.js' ), array( 'jquery' ), true );
+	wp_enqueue_script('main-university-js', get_theme_file_uri( '/assets/js/scripts-bundle.js' ),NULL, microtime(),true);
+
 
 	//Nav Focus JS
 	wp_enqueue_script( 'medical-care-navigation-focus', get_theme_file_uri( '/assets/js/navigation-focus.js' ), array( 'jquery' ), true );
@@ -169,14 +170,27 @@ function medical_care_scripts() {
 	//Superfish JS
 	wp_enqueue_script( 'superfish-js', get_theme_file_uri( '/assets/js/jquery.superfish.js' ), array( 'jquery' ),true );
 
+
+	
+
+
 	//Bootstarp JS
 	wp_enqueue_script( 'bootstrap.js', get_theme_file_uri( '/assets/js/bootstrap.js' ), array( 'jquery' ),true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_localize_script('medical-care-custom.js', 
+		'universityData', 
+		array(
+		'root_url' => get_site_url()
+		)
+		);
 }
 add_action( 'wp_enqueue_scripts', 'medical_care_scripts' );
+
+
 
 function medical_care_fonts_scripts() {
 	$headings_font = esc_html(get_theme_mod('medical_care_headings_text'));
@@ -198,13 +212,15 @@ add_action( 'wp_enqueue_scripts', 'medical_care_fonts_scripts' );
 function medical_care_enqueue_admin_script( $hook ) {
 	
 	// Admin JS
-	wp_enqueue_script( 'medical-care-admin.js', get_theme_file_uri( '/assets/js/medical-care-admin.js' ), array( 'jquery' ), true );
+/* 	wp_enqueue_script( 'medical-care-admin.js', get_theme_file_uri( '/assets/js/medical-care-admin.js' ), array( 'jquery' ), true );
 
 	wp_localize_script('medical-care-admin.js', 'medical_care_scripts_localize',
         array(
             'ajax_url' => esc_url(admin_url('admin-ajax.php'))
         )
-    );
+    ); */
+
+
 }
 add_action( 'admin_enqueue_scripts', 'medical_care_enqueue_admin_script' );
 
