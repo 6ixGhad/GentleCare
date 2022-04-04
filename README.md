@@ -7,7 +7,7 @@ Gentle Care, a nursing home website, is directed to persons that require service
 
 
 ## User Roles and Permissions
-There consist of:
+User Roles:
 -Client 
 -Subscriber 
 -Administrator
