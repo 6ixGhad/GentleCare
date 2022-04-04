@@ -14,9 +14,24 @@
   <div class="container container--narrow page-section">
   <ul class ="link-list min-list">
     <?php
+    if(current_user_can( 'edit_review' )){
+      
+      
+  echo '<a href="http://gentlecare.great-site.net/wp-admin/post-new.php?post_type=review"> <button class="box-button">  Add Review </button> </a>';
+    }
+  ?>
+    <?php
       while(have_posts()){
         the_post();?>
-        <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+	  <div class="reviews">
+        <li class="li"><a href="<?php the_permalink();?>"><?php the_title();?></a> <p class="by">By</p> <a href="<?php the_author_url();?>"> <?php the_author();?></a>
+			<p class="pex"> <?php echo  wp_trim_words(get_the_excerpt(), 40);?> </p>
+      <a href="<?php the_permalink(); ?>"> <button class="box-button">  Read More </button> </a>
+
+	    </li>
+			
+		  </div>
+	  
         <?php 
       }
       echo paginate_links();

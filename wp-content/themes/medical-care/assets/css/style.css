@@ -6,8 +6,6 @@
 @import "base/variables";
 @import "base/baseline";
 @import "base/utility-classes";
-@import "../js/scripts.js";
-@import "../js/modules/Search.js";
 
 /* BEM Blocks */
 @import "modules/shame";

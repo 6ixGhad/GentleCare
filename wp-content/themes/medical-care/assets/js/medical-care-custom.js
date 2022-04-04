@@ -53,8 +53,3 @@ jQuery( document ).ready(function() {
        }, 600);
   })
 })
-
-
-
-
-

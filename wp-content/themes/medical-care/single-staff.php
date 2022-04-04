@@ -47,5 +47,6 @@
 
     <?php
     }
+    
     get_footer();
 ?>

@@ -170,6 +170,8 @@ function medical_care_scripts() {
 	//Superfish JS
 	wp_enqueue_script( 'superfish-js', get_theme_file_uri( '/assets/js/jquery.superfish.js' ), array( 'jquery' ),true );
 
+	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 	
 
@@ -399,7 +401,7 @@ function redirectUsersToFrontend(){
 	}
 
 //Redirect subscriber accounts out of admin and onto homepage
-add_action('admin_init', 'redirectClientsToFrontend');
+/* add_action('admin_init', 'redirectClientsToFrontend');
 function redirectClientsToFrontend(){
  $ourCurrentUser = wp_get_current_user();
  $userNumRoles = count($ourCurrentUser->roles);
@@ -408,7 +410,7 @@ function redirectClientsToFrontend(){
  wp_redirect(site_url('/'));
  exit; //tell PHP to stop once someone is redirected
  }
- }
+ } */
 
 	//Hide admin bar from subscribers
 	add_action('wp_loaded', 'noClientsAdminBar');
@@ -465,3 +467,9 @@ family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,7
  </div> 
  </div>
    <?php }
+
+function admin_default_page() {
+	return 'http://project-local.local/';
+  }
+  
+  add_filter('login_redirect', 'admin_default_page');

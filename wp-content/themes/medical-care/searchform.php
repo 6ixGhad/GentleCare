@@ -21,6 +21,3 @@ placeholder="What are you looking for?"
  </div>
  </div>
 </div>
-
-
-

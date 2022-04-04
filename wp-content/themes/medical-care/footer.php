@@ -7,19 +7,35 @@
  */
 
 ?>
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="copyright">
-			<div class="container footer-content">
-				<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-			</div>
-		</div>
-		<?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
-			<?php if( get_theme_mod( 'medical_care_scroll_enable',true) != '') { ?>
-				<div class="scroll-top">
-					<button type=button id="medical-care-scroll-to-top" class="scrollup"><i class="fas fa-chevron-up"></i></button>
-				</div>
-			<?php }?>
-	</footer>
+	<footer class="site-footer">
+
+<div class="site-footer__inner container container--narrow">
+
+  <div class="group">
+
+    <div class="site-footer__col-one">
+      <h1 class="school-logo-text school-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Gentle</strong> Care</a></h1>
+      <p><a class="site-footer__link" href="#">868-723-8810</a></p>
+    </div>
+
+    
+
+    <div class="site-footer__col-four">
+      <h3 class="headline headline--small">Connect With Us</h3>
+      <nav>
+        <ul class="min-list social-icons-list group">
+          <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>
+</footer>
 
 
 
