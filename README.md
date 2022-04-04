@@ -66,7 +66,7 @@ The header of the Gentle Care website features different buttons that pertain to
 # References
 The Medical Care theme was used as a base theme. All above mentioned features were created by the project's group members. Custom CSS was created by the project's group members however, minimal base CSS styling from the Medical Care theme and the Fictonal University theme was used.
 
-#Project Group Members:
+# Project Group Members:
 Jeremy De Freitas 816018479
 Dhanesh Sankar 816020350
 Harish Singh 816117713
