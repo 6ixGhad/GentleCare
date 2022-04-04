@@ -35,7 +35,7 @@ Staff - Used to create custom Staff posts for displaying the Staff employeed at 
 Services- Used to create custom Services posts for displaying the services offered by Gentle Care.
 Reviews- Used by Clients to create custom Review posts on the Gentle Care website. 
 
-## Pages & Child Pages with Dynamic Menus and Breadcrumb Nnaviagtion.
+## Pages & Child Pages with Dynamic Menus and Breadcrumb Naviagtion.
 Gentle Care features 3 pages with at least 2 childpages each.
 The following pages contain childpages and each feature dynamic menus and breadcrumb navigation.
 
@@ -64,7 +64,8 @@ The website allows users of the Client user role to add content to the Reviews p
 The header of the Gentle Care website features different buttons that pertain to registration and login. If a user is not logged in, the header will feature a Sign Up and Login button. If a user is logged in to the website, only the Log Out button is shown on the header. The Sign up and Login buttons will redirect the user to a custom Sign up or Login page where they can either sign up for a new account or login to an existing account on the front end.
 
 # References
-The Medical Care theme was used as a base theme. All above mentioned features were created by the project's group members. Custom CSS was created by the project's group members however, minimal base CSS styling from the Medical Care theme and the Fictonal University theme was used.
+The Medical Care theme was used as a base theme. All above mentioned features were created by the project's group members. Custom CSS was created by the project's group members however, minimal base CSS styling from the Medical Care theme and the Fictonal University theme was used. Additionally, some content and guidance was taken from https://www.familyresourcehomecare.com/
+
 
 # Project Group Members:
 Jeremy De Freitas 816018479
