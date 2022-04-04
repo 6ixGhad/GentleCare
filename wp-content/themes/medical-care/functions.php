@@ -469,7 +469,7 @@ family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,7
    <?php }
 
 function admin_default_page() {
-	return 'http://project-local.local/';
+	return 'http://gentlecare.great-site.net/';
   }
   
   add_filter('login_redirect', 'admin_default_page');
