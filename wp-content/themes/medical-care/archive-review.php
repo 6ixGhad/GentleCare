@@ -14,7 +14,7 @@
   <div class="container container--narrow page-section">
   <ul class ="link-list min-list">
     <?php
-    if(current_user_can( 'edit_review' )){
+    if(current_user_can( 'publish_reviews' )){
       
       
   echo '<a href="http://gentlecare.great-site.net/wp-admin/post-new.php?post_type=review"> <button class="box-button">  Add Review </button> </a>';
