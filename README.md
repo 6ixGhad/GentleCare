@@ -1,76 +1,35 @@
-# Gentle Care Nursing Home
+# Project Overview 
+The Gentle Care website extends the Gentle Care Nursing Home services, staff and experiences. It provides a solution to those in need of assisted living and ease of decision through the provision of necessary information. It reassures extra care, helpful accommodation and around the clock attention for your loved ones. 
+This project was achieved through the use of various technologies, software and coding. Using an existing theme(Medical Care), set a base for the Gentle Care website as a host of sections and features were there to use and manipulate .The implementation of Custom Post types, Custom Fields, Plugins and Programming languages enabled us to create the finished product, that is Gentle Care. The general theme and graphical user interface was simplified as much as possible for ease of use and navigation to cater for the senior audience we intend to attract.
+ 
+# Project Team Description 
+The project team includes Jeremy De Freitas, Dhanesh Sankar and Harish Singh.
+Roles taken and tasks worked on by Jeremy De Freitas (Project team member): Backend PHP programming, custom post types, relationships(both front and back-end), site content, hosting and deployment, documentation.
+Roles taken and tasks worked on by Dhanesh Sankar (Project team member): custom post types, site content, documentation and relationships(front-end).
+Roles taken and tasks worked on by Harrish Singh (Project team member): Live search.
+ 
+# Website Goals 
+The Gentle Care website’s target audience is individuals and/or families of individuals over the age of 60, that require full-time or part-time caregiving services. The purpose of the website is to make information about our organization as well as the services and events we offer, available to our target audience. The website also serves the purpose of gathering feedback for improvements to the organization through client reviews.
+Content Structure (site map, content type, page templates)
 
-# Documentation
+# Content Structure
+https://imgur.com/a/01pWcjf
 
-## Project Description
-Gentle Care, a nursing home website, is directed to persons that require services for the elderly. Providing the needed accommodation, extra care and round the clock attention to make it an easy decision to choose Gentle Care. The website entails essential pages that deliver the necessary information a client may need. These include the following pages such as: services provided (Services), background of the business (About Us), client reviews/feedback (Reviews), nursing team (Staff), Events and contact page. Within these pages are corresponding child pages where excerpt information can be expanded. For example, Contact Us and Privacy pages are expandable. Additionally, pagination is implemented into the Staff page. The home page will be equipped with an information banner for easy access of information, e.g. contact number. Relevant, dynamic images and banners will be displayed along with clientele and location images. Smooth forward and backward navigation will be implemented for ease of use.
+# Website Design 
+The base theme used for the Gentle Care website was the Medical Care WordPress theme (free version). The Medical Care theme is one of the less popular WordPress themes with only about 500 active installations. The lack of popularity played a role in the decision of choosing this theme as we wanted our website to be unique. Additionally, since the theme is medical based, the base functionality of the theme as well as the included styling was relevant to our website and was the reason for choosing this theme.
+Link to theme: Medical Care - WordPress theme | WordPress.org
+Functionality (queries, user roles, search)
+The Gentle Care website features many different functionalities. Namely, user roles and live search.
+The user roles functionality allows the website’s admin to create custom user roles and permissions and assign them to certain users. For instance, managers and staff each have their own user role which allows them different levels of permission over the Gentle Care website. Additionally, a custom role is assigned to clients, that is, individuals or family members of individuals that are customers of Gentle Care. This custom role allows clients to post reviews on the website about their experience at Gentle Care. Conversely, Subscribers, the default role that is assigned to new users and non-customers/staff, can only view public content on the website but they cannot post reviews like clients.
+The live search functionality allows users to search for all different types of contents on the website and view matches as they type. This is done through the use of the REST API and JSON queries using search keywords. This makes search for specific content and information easy and efficient. 
+Link to theme: Medical Care - WordPress theme | WordPress.org
 
-
-## User Roles and Permissions
-User Roles:
--Client 
--Subscriber 
--Administrator
--Manager
--Staff
-
-The client role is assigned to registed customers or the family members of registered customers of Gentle Care.
-Clients can view all public pages on the website, create, edit and delete thier own reviews.
-
-The Subscriber role is assigned to new users by default and is granted the least privileges on the website as they are only able to view public content on the website.
-
-Administrator has unlimited access across the site along with granting and denying permission of other users and roles.
-
-Managers are able to add, delete and edit custom posts such as adding a staff member or adding a new service, however editing user roles and permissions are not granted.
-
-Staff Members have only one editorial privilege which is manage the events page. They can view the page as desired without any permissions to remove or edit the other post types.
-
-
-
-## Post Types
-The Gentle Care website utalizes (4) custom post types: 
-
-Events - Used to create custom Event posts of events being held at Gentle Care.
-Staff - Used to create custom Staff posts for displaying the Staff employeed at Gentle Care.
-Services- Used to create custom Services posts for displaying the services offered by Gentle Care.
-Reviews- Used by Clients to create custom Review posts on the Gentle Care website. 
-
-## Pages & Child Pages with Dynamic Menus and Breadcrumb Naviagtion.
-Gentle Care features 3 pages with at least 2 childpages each.
-The following pages contain childpages and each feature dynamic menus and breadcrumb navigation.
-
-Page: About Us
-Child Pages of About Us: Our History, Our Partners.
-
-Page: Contact Us
-Child Pages of Contact Us: Visiting Hours, Appointments and Tours. 
-
-Page: Privacy Policy
-Child Pages of Privacy Policy: How Long We Retain Your Data, What Rights You Have Over Your Data.
-
-## Content pagination, curation and customised presentation:
-The Gentle Care website features at least 3 pages with content pagination, curation and customised presentation.
-Each page has a custom archive and single page that customizes the styling appropriately.
-Namely Events, Reviews and Staff.
-
-## Livesearch across the content on the site:
-Gentle Care features a live search that can search for content accross the website by using the REST API as well as JSON data queries. 
-Post titles, custom posts, content, author names and infomation can all be search for with live results present in the search bar.
-
-## User Generated Content:
-The website allows users of the Client user role to add content to the Reviews page. Although all user roles can view the Reviews page, only Clients and Admins can add new Reviews to the website. Additionally, only user's that have permission to add a new review (Clients and Admins) are given the option to add Reviews on the Front End using the button present on the Reviews page (only visible to Admins and Clients). 
-
-## Front-end Registration and Login
-The header of the Gentle Care website features different buttons that pertain to registration and login. If a user is not logged in, the header will feature a Sign Up and Login button. If a user is logged in to the website, only the Log Out button is shown on the header. The Sign up and Login buttons will redirect the user to a custom Sign up or Login page where they can either sign up for a new account or login to an existing account on the front end.
-
-# References
-The Medical Care theme was used as a base theme. All above mentioned features were created by the project's group members. Custom CSS was created by the project's group members however, minimal base CSS styling from the Medical Care theme and the Fictonal University theme was used. Additionally, some content and guidance was taken from https://www.familyresourcehomecare.com/
+# Functionality 
+The Gentle Care website features many different functionalities. Namely, user roles and live search.
+The user roles functionality allows the website’s admin to create custom user roles and permissions and assign them to certain users. For instance, managers and staff each have their own user role which allows them different levels of permission over the Gentle Care website. Additionally, a custom role is assigned to clients, that is, individuals or family members of individuals that are customers of Gentle Care. This custom role allows clients to post reviews on the website about their experience at Gentle Care. Conversely, Subscribers, the default role that is assigned to new users and non-customers/staff, can only view public content on the website but they cannot post reviews like clients.
+The live search functionality allows users to search for all different types of contents on the website and view matches as they type. This is done through the use of the REST API and JSON queries using search keywords. This makes search for specific content and information easy and efficient. 
 
 
-# Project Group Members:
-Jeremy De Freitas 816018479
-Dhanesh Sankar 816020350
-Harish Singh 816117713
 
 
 
