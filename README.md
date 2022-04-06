@@ -13,7 +13,7 @@ The Gentle Care website’s target audience is individuals and/or families of in
 Content Structure (site map, content type, page templates)
 
 # Content Structure
-![alt text](https://imgur.com/a/01pWcjf)
+![alt text](https://i.imgur.com/T2rrXgu.jpg)
 
 # Website Design 
 The base theme used for the Gentle Care website was the Medical Care WordPress theme (free version). The Medical Care theme is one of the less popular WordPress themes with only about 500 active installations. The lack of popularity played a role in the decision of choosing this theme as we wanted our website to be unique. Additionally, since the theme is medical based, the base functionality of the theme as well as the included styling was relevant to our website and was the reason for choosing this theme.
