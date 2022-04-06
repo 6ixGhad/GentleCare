@@ -13,7 +13,20 @@ The Gentle Care website’s target audience is individuals and/or families of in
 Content Structure (site map, content type, page templates)
 
 # Content Structure
+### Content Type
+-Sliders
+-Images
+-Advertisements
+-Events
+-Profiles
+-Review/Testimonial
+-TimeLine
+-Map
+
+### Site Map
 ![Site Map](https://i.imgur.com/5j0W7Tb.jpg)
+
+### Page Templates
 ![Page templates](https://i.imgur.com/T2rrXgu.jpg)
 
 
